@@ -1,0 +1,13 @@
+{
+  "name": "frontend-testing",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "app", 
+    "server"
+  ],
+  "scripts": {
+    "start": "coyarn workspace server start && yarn workspace app start"
+  }
+}
