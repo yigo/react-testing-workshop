@@ -4,10 +4,13 @@
   "private": true,
   "license": "MIT",
   "workspaces": [
-    "app", 
+    "app",
     "server"
   ],
   "scripts": {
-    "start": "coyarn workspace server start && yarn workspace app start"
+    "start": "concurrently \"yarn workspace server start\" \"yarn workspace app start\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
   }
 }
