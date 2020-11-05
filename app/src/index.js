@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Examples/3Async';
+import App from './Examples/5Form/Form';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App onSearch={console.log} />
   </React.StrictMode>,
   document.getElementById('root')
 );
